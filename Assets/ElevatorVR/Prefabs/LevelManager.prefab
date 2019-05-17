@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4553714512243148}
-  - component: {fileID: 114082207801701466}
   - component: {fileID: 114536643582562218}
   m_Layer: 0
   m_Name: LevelManager
@@ -41,18 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114082207801701466
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1134485684523330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c1a21e99227e8449b4e5416c24ffd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListOfEnemies: []
 --- !u!114 &114536643582562218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,5 +55,26 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   enemySpawnData: {fileID: 11400000, guid: b82a0fdda36f72344886634b3ce8bba1, type: 2}
+  enemyPrefab: {fileID: 1789071618442882, guid: 5d4409c03b339ff49a817e63045859bc,
+    type: 2}
+  timeSinceLoad: 0
   hasEnemiesToSpawn: 0
   enemySpawnDataCopy: []
+  enemyObjectPool: []
+  player: {fileID: 0}
+  sceneIsRestarting: 0
+  DefaultDroneStat:
+    health: 3
+    speed: 3.5
+    angularVel: 100
+    chargeSpeed: 4
+  FastDroneStat:
+    health: 2
+    speed: 6
+    angularVel: 200
+    chargeSpeed: 2.5
+  TankyDroneStat:
+    health: 7
+    speed: 2
+    angularVel: 50
+    chargeSpeed: 4

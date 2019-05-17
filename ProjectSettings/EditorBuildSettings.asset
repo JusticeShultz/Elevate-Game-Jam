@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ElevatorVR/_Scenes/Greybox.unity
     guid: 72d33e43edbbbd444b60158a27c1bbac
+  - enabled: 1
+    path: Assets/ElevatorVR/_Scenes/Legit/Floor1.unity
+    guid: dbb0a95bb8df4a145ac41d7f09c415f1
+  - enabled: 1
+    path: Assets/ElevatorVR/_Scenes/Legit/Floor2.unity
+    guid: b50d4fe2fd54985468740e34d77265d8
+  - enabled: 1
+    path: Assets/ElevatorVR/_Scenes/Legit/Floor3.unity
+    guid: 2c08c3a5dbae1db478dd6cfa8e72c455
+  - enabled: 1
+    path: Assets/ElevatorVR/_Scenes/Legit/Floor4.unity
+    guid: e59a44a4e27f96d418a689aa2eac11da
+  - enabled: 1
+    path: Assets/ElevatorVR/_Scenes/Legit/Floor5.unity
+    guid: 7ce83ca72d8902c4eba1bda982d243ae
   m_configObjects: {}

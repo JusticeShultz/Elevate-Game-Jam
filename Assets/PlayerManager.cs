@@ -13,9 +13,10 @@ public class PlayerManager : MonoBehaviour
      */
 
     [Header("Player Stats")]
-    public float playerStartHP;
     [ReadOnlyField]
     public float playerCurrentHP;
+
+    public float playerStartHP;
 
 
     [ReadOnlyField]
@@ -36,7 +37,7 @@ public class PlayerManager : MonoBehaviour
 
     [Space(10)]
     [ReadOnlyField]
-    public GameObject LevelManagerGameObject;
+    public EnemySpawner enemySpawner;
 
 
 
@@ -55,7 +56,9 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-
+        if (enemySpawner == null)
+        {
+        }
 
     }
 
@@ -71,6 +74,9 @@ public class PlayerManager : MonoBehaviour
         if (playerCurrentHP <= 0)
         {
             playerIsAlive = false;
+
+            enemySpawner.RestartLevel();
+
             //end game?
             //restartLevel
             //TODO
@@ -91,8 +97,8 @@ public class PlayerManager : MonoBehaviour
 
     private void OnSceneLoad()
     {
-        LevelManagerGameObject = GameObject.FindGameObjectWithTag("LevelManager");
-        LevelManagerGameObject.GetComponent<EnemySpawner>().player = this;
+        enemySpawner = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<EnemySpawner>();
+        enemySpawner.GetComponent<EnemySpawner>().player = this;
     }
 
 }

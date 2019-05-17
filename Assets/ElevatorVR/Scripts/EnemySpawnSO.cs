@@ -5,10 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "LevelSpawnParameters")]
 public class EnemySpawnSO : ScriptableObject
 {
+
     [System.Serializable]
     public struct EnemySpawn
     {
-        //enemy type,
+        public EnemySpawner.EnemyTypes enemyType;
         public int SpawnLocationIndex;
         public float SpawnTimer;
     }

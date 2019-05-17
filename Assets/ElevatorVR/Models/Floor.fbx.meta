@@ -8,7 +8,7 @@ ModelImporter:
     2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube1
+    4300000: Floor
   externalObjects: {}
   materials:
     importMaterials: 1

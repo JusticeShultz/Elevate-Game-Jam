@@ -57,6 +57,9 @@ public class GunController : MonoBehaviour
     [Tooltip("Which object will hold our bullets.")]
         public GameObject BulletPool;
 
+    [Tooltip("The particle system that will play on reload.")]
+        public ParticleSystem ReloadParticle;
+
     [Tooltip("Which animator will pick up the fire trigger.")]
         public Animator GunAnimator;
 
@@ -133,12 +136,14 @@ public class GunController : MonoBehaviour
         {
             local_FireCD = ManualCooldownTime;
             local_CooldownCharge = 0;
+            ReloadParticle.Play();
         }
         
         if (local_CooldownCharge >= CooldownCap)
         {
             local_FireCD = AutoCooldownTime;
             local_CooldownCharge = 0;
+            ReloadParticle.Play();
         }
     }
 
