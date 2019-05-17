@@ -40,8 +40,11 @@ public class PlayerManager : MonoBehaviour
 
 
 
+
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
+
         playerCurrentHP = playerStartHP;
         playerIsAlive = true;
         playerIsInvicible = false;

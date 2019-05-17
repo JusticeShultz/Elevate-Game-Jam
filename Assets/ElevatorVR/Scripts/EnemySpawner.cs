@@ -45,7 +45,7 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
         //cant spawn more than one per frame
-        if (hasEnemiesToSpawn == true &&  enemySpawnDataCopy[0].SpawnTimer <= Time.timeSinceLevelLoad)
+        if (hasEnemiesToSpawn == true && enemySpawnDataCopy[0].SpawnTimer <= Time.timeSinceLevelLoad)
         {
             //do shit
             //TODO
@@ -60,7 +60,26 @@ public class EnemySpawner : MonoBehaviour
             if (enemySpawnDataCopy.Count == 0)
             {
                 hasEnemiesToSpawn = false;
-            }   
+            }
+        }
+
+        if (hasEnemiesToSpawn == false)
+        {
+            foreach (Drone_Enemy m in enemyObjectPool)
+            {
+                if (m.gameObject.activeSelf == true)
+                {
+                    return;
+                }
+            }
+
+            //If no enemies and no active enemies
+            /*
+             *Ready to load new scene 
+             * 
+             * 
+             */
+            ElevatorController.Elevator.LoadNextScene();
         }
     }
 

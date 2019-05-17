@@ -15,23 +15,23 @@ public class ElevatorController : MonoBehaviour
 	void Start ()
     {
         Elevator = this;
-
+         
         if (SceneOrder.Count <= 0) return;
 
         DontDestroyOnLoad(gameObject);
 
         SceneManager.LoadSceneAsync(SceneOrder[Level]);
 
-        animator.SetBool("DoorOpen", true);
+        animator.SetTrigger("Open_trigger");
 
         //Play the door open sound
-	}
+    }
 	
-    void LoadNextScene()
+    public void LoadNextScene()
     {
         //Play the door closing sound
-
-        animator.SetBool("DoorOpen", false);
+        Level++;
+        animator.SetTrigger("Close_trigger");
         StartCoroutine(DoneLoadingTimer());
     }
 
@@ -45,7 +45,7 @@ public class ElevatorController : MonoBehaviour
 
         //Play the opening door sound
 
-        animator.SetBool("DoorOpen", true);
+        animator.SetTrigger("Open_trigger");
 
         print("Scene " + Level + " loaded");
     }
