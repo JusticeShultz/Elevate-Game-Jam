@@ -13,12 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyInitializeValue: 5
   EnemySpawnData:
-  - enemyType: 2
+  - enemyType: 1
     SpawnLocationIndex: 0
     SpawnTimer: 2
   - enemyType: 2
     SpawnLocationIndex: 1
     SpawnTimer: 7
-  - enemyType: 2
+  - enemyType: 0
     SpawnLocationIndex: 0
     SpawnTimer: 10

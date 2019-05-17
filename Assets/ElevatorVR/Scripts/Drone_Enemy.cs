@@ -13,6 +13,8 @@ public class Drone_Enemy : MonoBehaviour
 
     public float shotDamage = 10000000f;
 
+    public MeshRenderer meshRenderer;
+
     [ReadOnlyField] public PlayerManager player;
 
     [ReadOnlyField] public float CurrentHealth;
@@ -61,6 +63,8 @@ public class Drone_Enemy : MonoBehaviour
 
     public void InitializeDrone(PlayerManager _player, EnemySpawner.EnemyDroneStats stats, Vector3 pos)
     {
+        meshRenderer.material = stats.mat;
+
         player = _player;
         transform.position = pos;
         CurrentHealth = stats.health;

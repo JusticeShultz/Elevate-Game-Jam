@@ -157,7 +157,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2547,16 +2547,16 @@ Light:
   m_SpotAngle: 91
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.85
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 97799acb0a5f29644875356634905ea5, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3423,7 +3423,7 @@ Transform:
   m_GameObject: {fileID: 1175343200}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 8.77, z: 0}
-  m_LocalScale: {x: 1.9607, y: 1.9607, z: 1.9607}
+  m_LocalScale: {x: 2.7708614, y: 1.9607, z: 7.649867}
   m_Children: []
   m_Father: {fileID: 763181754}
   m_RootOrder: 2
@@ -3836,7 +3836,8 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64000012707594834, guid: f11886bad7ca13742ba0be955318d952, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: f11886bad7ca13742ba0be955318d952, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1346123418
@@ -4151,7 +4152,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4458,16 +4459,16 @@ Light:
   m_SpotAngle: 91
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.85
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 97799acb0a5f29644875356634905ea5, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -4527,7 +4528,8 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64000012707594834, guid: f11886bad7ca13742ba0be955318d952, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: f11886bad7ca13742ba0be955318d952, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1576078646
@@ -5456,7 +5458,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -5946,16 +5948,16 @@ Light:
   m_SpotAngle: 91
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.85
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 97799acb0a5f29644875356634905ea5, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2

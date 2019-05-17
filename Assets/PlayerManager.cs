@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerManager : MonoBehaviour
      *    
      *    current level is handled on world manager
      */
+    public static PlayerManager player;
 
     [Header("Player Stats")]
     [ReadOnlyField]
@@ -41,18 +43,31 @@ public class PlayerManager : MonoBehaviour
 
 
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
 
     void Start()
     {
+        player = this;
+
         DontDestroyOnLoad(gameObject);
 
         playerCurrentHP = playerStartHP;
         playerIsAlive = true;
         playerIsInvicible = false;
-
-        OnSceneLoad();
+         enemySpawner = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<EnemySpawner>();
+        enemySpawner.GetComponent<EnemySpawner>().player = this;
+        //OnSceneLoad();
     }
-
+    //https://itch.io/game/accept-admin/424561/1040770 ray
+    //https://itch.io/game/accept-admin/424561/1624064 randal
 
     void Update()
     {
@@ -95,10 +110,9 @@ public class PlayerManager : MonoBehaviour
         playerIsInvicible = false;
     }
 
-    private void OnSceneLoad()
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         enemySpawner = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<EnemySpawner>();
         enemySpawner.GetComponent<EnemySpawner>().player = this;
     }
-
 }

@@ -64,16 +64,19 @@ MonoBehaviour:
   player: {fileID: 0}
   sceneIsRestarting: 0
   DefaultDroneStat:
+    mat: {fileID: 2100000, guid: 1f06fab943b771546b5fdb1902b8b33c, type: 2}
     health: 3
     speed: 3.5
     angularVel: 100
     chargeSpeed: 4
   FastDroneStat:
+    mat: {fileID: 2100000, guid: 6819ef57e1b70e0408801d9d66d65b0a, type: 2}
     health: 2
     speed: 6
     angularVel: 200
     chargeSpeed: 2.5
   TankyDroneStat:
+    mat: {fileID: 2100000, guid: c00a7366497e1c341bfb5c64b12e7e5f, type: 2}
     health: 7
     speed: 2
     angularVel: 50

@@ -131,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1789071618442882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.0804152, y: 0.5, z: 2.976884}
+  m_LocalPosition: {x: 3.9491673, y: 0.5, z: 2.6102304}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4264639959806896}
@@ -273,6 +273,7 @@ MonoBehaviour:
   Agent: {fileID: 195201073972538880}
   ShotChargeTime: 4
   shotDamage: 10000000
+  meshRenderer: {fileID: 23781909072322012}
   player: {fileID: 0}
   CurrentHealth: 0
   StoppingDistance: 0

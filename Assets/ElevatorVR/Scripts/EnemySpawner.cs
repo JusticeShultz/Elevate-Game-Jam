@@ -40,6 +40,7 @@ public class EnemySpawner : MonoBehaviour
     [System.Serializable]
     public struct EnemyDroneStats
     {
+        public Material mat;
         public float health;
         public float speed;
         public float angularVel;
@@ -53,9 +54,14 @@ public class EnemySpawner : MonoBehaviour
 
 
 
+    void Awake()
+    {
+        player = PlayerManager.player;
+    }
 
     void Start()
     {
+       
         timeSinceLoad = 0.0f;
         //create  on start?
         enemySpawnDataCopy = new List<EnemySpawnSO.EnemySpawn>(enemySpawnData.EnemySpawnData);
